@@ -1,0 +1,212 @@
+/* =========================================================
+   RESULTS
+   ========================================================= */
+
+.results {
+  padding: 100px 0 120px;
+
+  background-color: var(--color-background);
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.results__container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.results__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 60px;
+
+  text-align: center;
+}
+
+.results__title {
+  margin: 0;
+
+  color: var(--color-dark);
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 58px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.results__line {
+  width: 160px;
+  height: 3px;
+
+  margin-top: 28px;
+
+  background-color: var(--color-orange);
+}
+
+.results__intro {
+  max-width: 600px;
+
+  margin: 20px 0 0;
+
+  color: var(--color-text-secondary);
+  font-family: var(--font-ui);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.results__cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 70px;
+}
+
+/* =========================================================
+   ESFERAS
+   ========================================================= */
+
+.results__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 300px;
+
+  padding: 45px;
+
+  border-radius: 50%;
+
+  background-color: var(--color-orange);
+  color: var(--color-dark);
+
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.results__card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.results__card-title {
+  margin: 0 0 14px;
+
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.results__card-text {
+  max-width: 210px;
+
+  margin: 0;
+
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-white);
+}
+
+.results__link {
+  margin-top: 18px;
+
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 1024px) {
+  .results {
+    padding: 80px 0 100px;
+  }
+
+  .results__cards {
+    gap: 40px;
+  }
+
+  .results__card {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+  .results {
+    padding: 70px 0 80px;
+  }
+
+  .results__header {
+    margin-bottom: 40px;
+  }
+
+  .results__title {
+    font-size: 40px;
+  }
+
+  .results__intro {
+    font-size: 16px;
+  }
+
+  .results__cards {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+  }
+
+  .results__card {
+    width: 270px;
+    height: 270px;
+  }
+
+  .results__card-title {
+    font-size: 26px;
+  }
+
+  .results__card-text {
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+   ACCESIBILIDAD
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .results__card {
+    transition: none;
+  }
+}

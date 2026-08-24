@@ -1,0 +1,179 @@
+@import url("./vendor/normalize.css");
+@import url("./vendor/fonts.css");
+
+/* =========================
+   VARIABLES DEL PROYECTO
+   ========================= */
+
+:root {
+  /* Colores base del portafolio */
+  --color-white: #ffffff;
+  --color-background: #f7f9f3;
+  --color-green-light: #cde9ca;
+  --color-green-soft: #ced89d;
+  --color-sand: #dfba74;
+  --color-orange: #e8a249;
+  --color-dark: #575e55;
+  --color-text-secondary: #7a8079;
+
+  /* Colores institucionales utilizados como acentos */
+  --color-institutional-blue: #003b73;
+  --color-institutional-blue-dark: #002b57;
+  --color-institutional-red: #d90429;
+
+  /* Tipografía */
+  --font-brand: "Comfortaa", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-body: "Nunito", sans-serif;
+  --font-ui: "Roboto", sans-serif;
+
+  /* Estructura */
+  --content-max-width: 1280px;
+  --page-padding: 80px;
+  --grid-gap: 24px;
+
+  /* Bordes */
+  --border-radius-small: 6px;
+  --border-radius-medium: 12px;
+  --border-radius-large: 20px;
+
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+/* =========================
+   RESET Y ESTILOS GLOBALES
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-dark);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================
+   TIPOGRAFÍA
+   ========================= */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(44px, 5vw, 68px);
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.2;
+}
+
+p {
+  font-family: var(--font-body);
+}
+
+/* =========================
+   CONTENEDOR
+   ========================= */
+
+.container {
+  width: min(calc(100% - (var(--page-padding) * 2)), var(--content-max-width));
+  margin: 0 auto;
+}
+
+/* =========================
+   ACCESIBILIDAD
+   ========================= */
+
+:focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 3px;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --page-padding: 40px;
+  }
+}
+
+/* =========================
+   MÓVIL
+   ========================= */
+
+@media screen and (max-width: 767px) {
+  :root {
+    --page-padding: 20px;
+  }
+
+  h1 {
+    font-size: 42px;
+    line-height: 1.12;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+}

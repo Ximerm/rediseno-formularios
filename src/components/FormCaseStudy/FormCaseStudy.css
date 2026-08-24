@@ -1,0 +1,516 @@
+/* =========================================================
+   FORM CASE STUDY
+   ========================================================= */
+
+.form-case-study {
+  width: 100%;
+
+  background-color: var(--color-background);
+}
+
+/* =========================================================
+   COMPARATIVA
+   ========================================================= */
+
+.form-case-study__comparison {
+  padding: 100px 0 120px;
+}
+
+.form-case-study__section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.form-case-study__title {
+  margin: 0;
+
+  color: var(--color-dark);
+
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5vw, 54px);
+  font-weight: 700;
+
+  line-height: 1.15;
+}
+
+.form-case-study__line {
+  width: 160px;
+  height: 3px;
+
+  margin-top: 28px;
+
+  background-color: var(--color-orange);
+}
+
+.form-case-study__description {
+  max-width: 600px;
+
+  margin: 18px 0 0;
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-ui);
+  font-size: 17px;
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.form-case-study__card {
+  width: min(920px, 100%);
+
+  margin: 0 auto;
+
+  padding: 18px;
+
+  background-color: var(--color-white);
+
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+
+  box-shadow: 0 12px 32px rgba(58, 66, 58, 0.08);
+}
+
+/* =========================================================
+   SLIDER
+   ========================================================= */
+
+.form-case-study__slider {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background-color: var(--color-white);
+
+  line-height: 0;
+}
+
+.form-case-study__slider-image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   IMAGEN ANTES
+   ========================================================= */
+
+.form-case-study__before {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+.form-case-study__before .form-case-study__slider-image {
+  width: 100%;
+  height: 100%;
+
+  max-width: none;
+
+  object-fit: contain;
+  object-position: center top;
+}
+
+/* =========================================================
+   ETIQUETAS
+   ========================================================= */
+
+.form-case-study__label {
+  position: absolute;
+
+  top: 16px;
+
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 65px;
+  height: 29px;
+
+  padding: 0 12px;
+
+  border-radius: 100px;
+
+  background-color: var(--color-dark);
+  color: var(--color-white);
+
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+.form-case-study__label--before {
+  left: 16px;
+}
+
+.form-case-study__label--after {
+  right: 16px;
+}
+
+/* =========================================================
+   DIVISOR
+   ========================================================= */
+
+.form-case-study__divider {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  z-index: 4;
+
+  width: 2px;
+
+  background-color: var(--color-white);
+
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+
+  transform: translateX(-1px);
+
+  pointer-events: none;
+}
+
+.form-case-study__handle {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+
+  background-color: var(--color-dark);
+  color: var(--color-white);
+
+  font-family: var(--font-ui);
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  transform: translate(-50%, -50%);
+}
+
+/* =========================================================
+   INPUT DEL SLIDER
+   ========================================================= */
+
+.form-case-study__range {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 6;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+
+  cursor: ew-resize;
+
+  opacity: 0;
+}
+
+/* =========================================================
+   NOTAS
+   ========================================================= */
+
+.form-case-study__notes {
+  padding: 90px 0;
+
+  background-color: var(--color-white);
+}
+
+.form-case-study__notes-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 70px;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+.form-case-study__note {
+  padding-left: 24px;
+
+  border-left: 3px solid var(--color-orange);
+}
+
+.form-case-study__note-title {
+  margin: 0 0 16px;
+
+  color: var(--color-orange);
+
+  font-family: var(--font-display);
+  font-size: 27px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.form-case-study__note-text {
+  max-width: 460px;
+
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-ui);
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* =========================================================
+   IMPLEMENTACIÓN
+   ========================================================= */
+
+.form-case-study__code {
+  padding: 90px 0 110px;
+
+  background-color: var(--color-background);
+}
+
+.form-case-study__code-content {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.form-case-study__code-title {
+  margin: 0;
+
+  color: var(--color-dark);
+
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5vw, 54px);
+  font-weight: 700;
+
+  line-height: 1.15;
+}
+
+/* Línea específica de Implementación */
+
+.form-case-study__code-line {
+  width: 100px;
+  height: 2px;
+
+  margin: 14px auto 0;
+
+  background-color: var(--color-orange);
+}
+
+.form-case-study__code-text {
+  max-width: 600px;
+
+  margin: 18px auto 28px;
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-ui);
+  font-size: 17px;
+
+  line-height: 1.5;
+}
+
+.form-case-study__code-link {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+
+  padding: 9px 20px;
+
+  border: 1.5px solid var(--color-dark);
+  border-radius: 100px;
+
+  background-color: transparent;
+  color: var(--color-dark);
+
+  font-family: var(--font-ui);
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  text-decoration: none;
+
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.form-case-study__code-link:hover {
+  border-color: var(--color-orange);
+
+  background-color: var(--color-orange);
+
+  color: var(--color-dark);
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 1024px) {
+  .form-case-study__comparison {
+    padding: 80px 0 100px;
+  }
+
+  .form-case-study__card {
+    width: min(850px, 100%);
+
+    padding: 14px;
+  }
+
+  .form-case-study__notes {
+    padding: 75px 0;
+  }
+
+  .form-case-study__notes-grid {
+    gap: 45px;
+  }
+}
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+  .form-case-study__comparison {
+    padding: 65px 0 75px;
+  }
+
+  .form-case-study__section-header {
+    margin-bottom: 35px;
+  }
+
+  .form-case-study__title {
+    font-size: 38px;
+  }
+
+  .form-case-study__description {
+    font-size: 16px;
+  }
+
+  .form-case-study__card {
+    padding: 8px;
+
+    border-radius: 6px;
+  }
+
+  .form-case-study__label {
+    top: 9px;
+
+    min-width: 56px;
+    height: 25px;
+
+    padding: 0 9px;
+
+    font-size: 10px;
+  }
+
+  .form-case-study__label--before {
+    left: 9px;
+  }
+
+  .form-case-study__label--after {
+    right: 9px;
+  }
+
+  .form-case-study__handle {
+    width: 36px;
+    height: 36px;
+
+    font-size: 14px;
+  }
+
+  .form-case-study__notes {
+    padding: 65px 0;
+  }
+
+  .form-case-study__notes-grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .form-case-study__note {
+    padding-left: 18px;
+  }
+
+  .form-case-study__note-title {
+    font-size: 24px;
+  }
+
+  .form-case-study__note-text {
+    font-size: 16px;
+  }
+
+  .form-case-study__code {
+    padding: 65px 0 80px;
+  }
+
+  .form-case-study__code-title {
+    font-size: 38px;
+  }
+
+  .form-case-study__code-text {
+    font-size: 16px;
+  }
+}
+
+/* =========================================================
+   ACCESIBILIDAD
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .form-case-study__code-link {
+    transition: none;
+  }
+}

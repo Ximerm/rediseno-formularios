@@ -1,0 +1,270 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+  position: relative;
+
+  width: 100%;
+  min-height: 360px;
+
+  overflow: hidden;
+
+  background-color: var(--color-background);
+}
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.footer__content {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  min-height: 360px;
+
+  padding-top: 70px;
+}
+
+/* =========================================================
+   REDES SOCIALES
+   ========================================================= */
+
+.footer__social {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.footer__social-link {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  transition:
+    opacity var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.footer__social-link:hover {
+  opacity: 0.65;
+
+  transform: translateY(-2px);
+}
+
+.footer__social-icon {
+  display: block;
+
+  width: 20px;
+  height: 20px;
+}
+
+/* =========================================================
+   NAVEGACIÓN
+   ========================================================= */
+
+.footer__navigation {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.footer__navigation-link {
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  text-decoration: none;
+
+  transition:
+    color var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+.footer__navigation-link:hover {
+  color: var(--color-orange);
+
+  opacity: 0.8;
+}
+
+.footer__navigation-separator {
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-ui);
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  opacity: 0.6;
+}
+
+/* =========================================================
+   IDENTIDAD
+   ========================================================= */
+
+.footer__tagline {
+  margin: 18px 0 0;
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+/* =========================================================
+   COPYRIGHT
+   ========================================================= */
+
+.footer__copyright {
+  margin: 18px 0 0;
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+/* =========================================================
+   VECTOR DEL FOOTER
+   ========================================================= */
+
+.footer__vector {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 1;
+
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    min-height: 320px;
+  }
+
+  .footer__content {
+    min-height: 320px;
+
+    padding-top: 60px;
+  }
+}
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+  .footer {
+    min-height: 280px;
+  }
+
+  .footer__content {
+    min-height: 280px;
+
+    padding-top: 50px;
+  }
+
+  .footer__social {
+    gap: 16px;
+  }
+
+  .footer__social-link {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer__social-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Navegación móvil */
+
+  .footer__navigation {
+    gap: 7px;
+
+    margin-top: 16px;
+  }
+
+  .footer__navigation-link {
+    font-size: 11px;
+  }
+
+  .footer__navigation-separator {
+    font-size: 11px;
+  }
+
+  /* Identidad móvil */
+
+  .footer__tagline {
+    margin-top: 14px;
+
+    font-size: 11px;
+  }
+
+  /* Copyright móvil */
+
+  .footer__copyright {
+    margin-top: 14px;
+
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   ACCESIBILIDAD
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__social-link,
+  .footer__navigation-link {
+    transition: none;
+  }
+}

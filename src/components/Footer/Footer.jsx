@@ -106,7 +106,10 @@ function Footer() {
             ·
           </span>
 
-          <Link className="footer__navigation-link" to="/contacto">
+          <Link
+            className="footer__navigation-link"
+            to="https://ximena-rodriguez-portfolio.vercel.app/"
+          >
             Portafolio
           </Link>
         </nav>

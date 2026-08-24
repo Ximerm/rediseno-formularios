@@ -27,7 +27,7 @@ const formCases = {
 
     afterAlt: "Formulario 1 después del rediseño",
 
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ximerm/rediseno-formularios",
   },
 
   formTwo: {
@@ -49,7 +49,7 @@ const formCases = {
 
     afterAlt: "Formulario 2 después del rediseño",
 
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ximerm/rediseno-formularios",
   },
 
   formThree: {
@@ -71,7 +71,7 @@ const formCases = {
 
     afterAlt: "Formulario 3 después del rediseño",
 
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ximerm/rediseno-formularios ",
   },
 };
 

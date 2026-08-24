@@ -1,6 +1,6 @@
 # Rediseño de Formularios Corporativos
 
-Proyecto de análisis, rediseño y modernización visual de formularios corporativos, desarrollado a partir de documentos existentes y orientado a mejorar su legibilidad, jerarquía visual, organización de la información y experiencia de uso.
+Proyecto de rediseño y modernización visual de formularios corporativos, desarrollado a partir de documentos existentes y orientado a mejorar su legibilidad, jerarquía visual, organización de la información y experiencia de uso.
 
 El proyecto presenta tres formularios en sus versiones **original** y **rediseñada**, permitiendo comparar directamente la estructura documental existente con la propuesta de modernización visual.
 
@@ -128,7 +128,7 @@ La comparación entre ambas versiones forma parte del caso de estudio presentado
 ## 📁 Estructura del repositorio
 
 ```text
-rediseño-formularios/
+rediseno-formularios/
 │
 ├── forms/
 │   │
@@ -183,20 +183,24 @@ Los nombres, fechas, códigos, entidades, responsables, firmas, logotipos y dem�
 
 El objetivo de estos datos es permitir la visualización completa de los formularios y demostrar cómo se comporta la propuesta de rediseño con información realista.
 
-🛠️ Tecnologías
-Aplicación de presentación
+## 🛠️ Tecnologías
+
+## Aplicación de presentación
+
 React
 JavaScript
 Vite
 HTML5
 CSS3
-Formularios
+
+## Formularios
+
 HTML5
-Tablas HTML
 CSS inline
 Imágenes y recursos gráficos
-Herramientas
-Visual Studio Code
+
+## Herramientas
+
 Git
 GitHub
 Vercel
@@ -205,7 +209,7 @@ Vercel
 
 El desarrollo del proyecto se realizó siguiendo un proceso de transformación progresiva:
 
-1. Análisis
+## 1. Análisis
 
 Revisión de la estructura existente de los formularios, identificando:
 
@@ -215,11 +219,13 @@ Tablas.
 Jerarquías.
 Elementos gráficos.
 Información repetitiva.
-Distribución del contenido. 2. Conservación de la estructura funcional
+Distribución del contenido.
+
+## 2. Conservación de la estructura funcional
 
 Se mantuvieron los contenidos y campos principales de cada documento para que el rediseño no alterara el propósito funcional del formulario.
 
-3. Rediseño visual
+## 3. Rediseño visual
 
 Se trabajó sobre:
 
@@ -230,11 +236,13 @@ Encabezados.
 Tablas.
 Separación de secciones.
 Consistencia gráfica.
-Presentación de resultados. 4. Comparación
+Presentación de resultados.
+
+## 4. Comparación
 
 Se conservaron las versiones originales y rediseñadas para facilitar la comparación visual y documentar el proceso de transformación.
 
-5. Presentación web
+## 5. Presentación web
 
 Finalmente, los formularios y sus casos de estudio fueron integrados en una aplicación web desarrollada con React y Vite.
 

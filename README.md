@@ -269,7 +269,10 @@ La propuesta permite conservar el carácter documental de los formularios mientr
 
 ## 👩‍💻 Autora
 
-Ximena Rodríguez
+**Ximena Rodríguez**
+
+- 🔗 [GitHub](https://github.com/Ximerm)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/arqximenarm/)
 
 Este proyecto forma parte de mi portafolio profesional y reúne conocimientos de diseño, arquitectura de información y desarrollo de interfaces web.
 

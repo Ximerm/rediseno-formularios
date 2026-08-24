@@ -187,23 +187,22 @@ El objetivo de estos datos es permitir la visualización completa de los formula
 
 ## Aplicación de presentación
 
-React
-JavaScript
-Vite
-HTML5
-CSS3
+- React
+- JavaScript
+- Vite
+- HTML5
+- CSS3
 
 ## Formularios
 
-HTML5
-CSS inline
-Imágenes y recursos gráficos
+- HTML
+- CSS inline
 
 ## Herramientas
 
-Git
-GitHub
-Vercel
+- Git
+- GitHub
+- Vercel
 
 ## 💡 Proceso de trabajo
 
@@ -213,13 +212,13 @@ El desarrollo del proyecto se realizó siguiendo un proceso de transformación p
 
 Revisión de la estructura existente de los formularios, identificando:
 
-Secciones.
-Campos.
-Tablas.
-Jerarquías.
-Elementos gráficos.
-Información repetitiva.
-Distribución del contenido.
+- Secciones.
+- Campos.
+- Tablas.
+- Jerarquías.
+- Elementos gráficos.
+- Información repetitiva.
+- Distribución del contenido.
 
 ## 2. Conservación de la estructura funcional
 
@@ -229,14 +228,14 @@ Se mantuvieron los contenidos y campos principales de cada documento para que el
 
 Se trabajó sobre:
 
-Jerarquía de información.
-Tipografía.
-Espaciado.
-Encabezados.
-Tablas.
-Separación de secciones.
-Consistencia gráfica.
-Presentación de resultados.
+- Jerarquía de información.
+- Tipografía.
+- Espaciado.
+- Encabezados.
+- Tablas.
+- Separación de secciones.
+- Consistencia gráfica.
+- Presentación de resultados.
 
 ## 4. Comparación
 
